@@ -64,6 +64,7 @@ after the installation, run
 
 ### main
 requirements.yaml - the dependancies for the micromamba env
+
 parti_prompts_complex_detailed.json - an example of a detailed caption file used to train ELLA+. 
 
 ### train
