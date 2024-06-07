@@ -1,27 +1,41 @@
 # Attribute Prompts Mixing
 
-Welcome to the official repository for the Attribute Prompts Mixing project! This project combines the strengths of two influential repositories, **lavi-bridge** and **ella**, along with insights drawn from the paper "P+". Our goal is to provide a robust framework for enhancing machine learning models with mixed attribute prompts.
+Welcome to the repository for the Attribute Prompts Mixing project! This project was done under the course 236004. It develops from several recent papers aiming to enhance the prompt-sample coherence of generations made with Stable Diffusion and to understand the different roles cross-attention layers have in the U-Net architecture proposed in other works. We approached the problem from the **lavi-bridge** and **ella** perspectives, incorporating insights from the paper "P+".
 
 ## Features
 
-- Integration with **lavi-bridge** and **ella** frameworks.
-- Improved attribute prompt handling based on the principles outlined in the "P+" paper.
-- Modular design for easy customization and extension.
+- Enhances text alignment in Text-to-Image generation models.
+- Leverages a novel decomposition of prompts into sub-prompts (style, color, and composition).
+- Incorporates a mixer layer per cross-attention layer to improve prompt adherence and overall aesthetics of generated images.
 
 ## Getting Started
 
-Follow these steps to get a copy of Attribute Prompts Mixing running on your local machine for development and testing purposes.
+# Setting Up the Environment with Micromamba
+
+This project uses a specific Python environment managed by Micromamba. Follow these instructions to recreate the environment on your own system.
+
+## Prerequisites
+
+Ensure you have Micromamba installed on your system. If Micromamba is not installed, you can install it by following the instructions on the [Mamba documentation](https://mamba.readthedocs.io/en/latest/installation.html).
+
+## Create the Environment
+
+1. **Clone the Repository**:
+   If you haven't already, clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/ronraphaeli/Attribute_Prompts_Mixing.git
+   cd Attribute_Prompts_Mixing
+
 
 ### Prerequisites
 
-Before you begin, ensure you have met the following requirements:
-- Python 3.8 or higher
-- Pipenv or Conda for managing dependencies
-
-### Installation
-
-Clone the repository to your local machine:
+we use python 3.10.13
+Use the requirements.yaml file to create a new environment with Micromamba. Run the following command in the terminal:
+```bash
+   micromamba create -f requirements.yaml
+```
+after the installation, run 
 
 ```bash
-git clone https://github.com/yourusername/attribute-prompts-mixing.git
-cd attribute-prompts-mixing
+   micromamba activate trans
+```
