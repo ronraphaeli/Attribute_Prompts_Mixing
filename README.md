@@ -35,6 +35,7 @@ python ella_v15.py --ckpt_dir ../checkpoints/ --output_dir ../results/ --train_b
 ## Setting Up the Environment with Micromamba
 
 This project uses a specific Python environment managed by Micromamba. Follow these instructions to recreate the environment on your own system.
+we use python 3.10.13
 
 ## Prerequisites
 
@@ -49,9 +50,6 @@ Ensure you have Micromamba installed on your system. If Micromamba is not instal
    cd Attribute_Prompts_Mixing
 ```
 
-### Prerequisites
-
-we use python 3.10.13
 Use the requirements.yaml file to create a new environment with Micromamba. Run the following command in the terminal:
 ```bash
    micromamba create -f requirements.yaml
