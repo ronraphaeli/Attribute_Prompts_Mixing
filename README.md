@@ -3,16 +3,16 @@
 ![image](https://github.com/ronraphaeli/Attribute_Prompts_Mixing/assets/102682845/094ec0a1-d812-49e6-91af-2f9fdd61f564)
 
 
-Welcome to the repository for the Attribute Prompts Mixing project! This project was done under the course 236004. It develops from several recent papers aiming to enhance the prompt-sample coherence of generations made with Stable Diffusion and to understand the different roles cross-attention layers have in the U-Net architecture proposed in other works. We approached the problem from the [**LaVi-Bridge**](https://github.com/ShihaoZhaoZSH/LaVi-Bridge) and [**ELLA**](https://github.com/TencentQQGYLab/ELLA?tab=readme-ov-file) perspectives, incorporating insights from the paper ["P+: Extended Textual Conditioning in Text-to-Image Generation"](https://prompt-plus.github.io/).
+Welcome to the repository for the Attribute Prompts Mixing project! This project was done under the course 236004. we developed the idea due to several recent papers aiming to enhance prompt following of generations made with Stable Diffusion and to understand the different roles cross-attention layers have in the U-Net architecture. We approached the problem from the [**LaVi-Bridge**](https://github.com/ShihaoZhaoZSH/LaVi-Bridge) and [**ELLA**](https://github.com/TencentQQGYLab/ELLA?tab=readme-ov-file) perspectives, incorporating insights from the paper ["P+: Extended Textual Conditioning in Text-to-Image Generation"](https://prompt-plus.github.io/).
 
 ![mixer_processing](https://github.com/ronraphaeli/Attribute_Prompts_Mixing/assets/102682845/e6c827b8-52d0-4e68-bd29-97cabb519b88)
+Photograph by Zhenyu Luo on Unsplash.
 
-
-## Features
+## Contributions
 
 - Enhances text alignment in Text-to-Image generation models.
 - Leverages a novel decomposition of prompts into sub-prompts (style, color, and composition).
-- Incorporates a mixer layer per cross-attention layer to improve prompt adherence and overall aesthetics of generated images.
+- Incorporates a mixer layer per cross-attention layer to improve prompt following and overall aesthetics of generated images.
 
 
 ## methods
