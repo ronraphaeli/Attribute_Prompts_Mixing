@@ -15,16 +15,16 @@ Photograph by Zhenyu Luo on Unsplash.
 - Incorporates a mixer layer per cross-attention layer to improve prompt following and overall aesthetics of generated images.
 
 
-## methods
+## Methods
 
-### lavi-bridge+
+### LaVi-Bridge+
 in this method, we train different adapters to different cross attention layers. 
 you can train it yourself when running the file "t5_unet.py".
 ```bash
 
 python t5_unet.py --ckpt_dir (cheackpoint of lavi-bridge) --output_dir (output dir of the checkpoints) --train_batch_size (batch size) -ci (path to coco dataset root) -ca (path to coco annotations) --save_steps 2500 --eval_steps 500 --max_train_steps 100000 --warmup_steps 1000  --lr_adapter 1e-5 --lr_vis 5e-6 --adapters_design (the division of cross attention layers to adapters, for example "[[0, 1, 2, 3] , [4, 5] , [6, 7], [8, 9], [10, 11], [12, 13, 14, 15]]") 
 ```
-### lavi-bridge+
+### ELLA+
 in this method, we train a mixer to every cross attention layers. 
 you can train it yourself when running the file "t5_unet.py".
 
@@ -32,9 +32,7 @@ you can train it yourself when running the file "t5_unet.py".
 python ella_v15.py --ckpt_dir ../checkpoints/ --output_dir ../results/ --train_batch_size 10 --num_workers 10 --save_steps 1000 --eval_steps 500 --max_train_steps 100000 --warmup_steps 1000 --lr_adapter 1e-3 --adapters_design [[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15]] --entropy_reg (entropy regularization, we recommand 0.000025) --entropy_temp ( temprature of the entropy regularization, for example 5.0) --mix_scale (maximum scale of the prompts weights 1.2) --entropy_warmup (warmup for the regularizing term, 5000)
 ```
 
-## Getting Started
-
-# Setting Up the Environment with Micromamba
+## Setting Up the Environment with Micromamba
 
 This project uses a specific Python environment managed by Micromamba. Follow these instructions to recreate the environment on your own system.
 
