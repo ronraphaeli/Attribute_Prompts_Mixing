@@ -60,6 +60,19 @@ after the installation, run
    micromamba activate trans
 ```
 
+## Contents
+
+### main
+requirements.yaml - the dependancies for the micromamba env
+parti_prompts_complex_detailed.json - an example of a detailed caption file used to train ELLA+. 
+
+### train
+the training scripts used
+
+### modules
+the modules needed in order to train the model, both for ELLA+ and LaVi-Bridge+
+
+
 
 ## Citation
 If you find our work useful, please consider citing:
